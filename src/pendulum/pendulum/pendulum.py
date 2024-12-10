@@ -19,7 +19,7 @@ class Pendulum(Node):
     def __init__(self):
         super().__init__(self.node_name)
         self.pi = pigpio.pi()
-        self.angle_sub = self.create_subscription(Float64, 'angle', self.angle_callback)
+        self.angle_sub = self.create_subscription(Float64, 'angle', self.angle_callback, 10)
         self.time_saver = time.time()
         self.prev_error = 0
         print('Pendulum node has been created')
