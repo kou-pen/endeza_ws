@@ -69,9 +69,15 @@ class Pendulum(Node):
 def main(args=None):
     rclpy.init(args=args)
     pendulum = Pendulum()
-    rclpy.spin(pendulum)
-    pendulum.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(pendulum)
+    except KeyboardInterrupt:
+        pendulum.pi.set_PWM_dutycycle(pendulum.PWM1_PIN[0], 0)
+        pendulum.pi.set_PWM_dutycycle(pendulum.PWM1_PIN[1], 0)
+        pendulum.pi.set_PWM_dutycycle(pendulum.PWM2_PIN[0], 0)
+        pendulum.pi.set_PWM_dutycycle(pendulum.PWM2_PIN[1], 0)
+        pendulum.destroy_node()
+        rclpy.shutdown()
     
 if __name__ == '__main__':
     main()
