@@ -54,10 +54,10 @@ class Pendulum(Node):
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], power)
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], 0)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], 0)
-            self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], -power)
+            self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], power)
         else:
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], 0)
-            self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], -power)
+            self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], power)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], power)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], 0)
         
