@@ -5,10 +5,10 @@ from std_msgs.msg import Float64
 import pigpio
 import time
 
-kPGain = 10.0
-kIGain = 10.0
+kPGain = 3000.0
+kIGain = 400.0
 kDGain = 0.0
-TargetAngle = 0.0
+TargetAngle = -0.14
 class Pendulum(Node):
     node_name = 'pendulum'
     PWM1_PIN = [17, 18]
@@ -52,16 +52,16 @@ class Pendulum(Node):
         
         if power > 0:
             duty_cycle = max(0, min(power * 100, 255))  # Clamp to the range [0, 255]
-            self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], duty_cycle)
-            self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], duty_cycle)
-            self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], 0)
-            self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], 0)
-        else:
-            duty_cycle = max(0, min(power * -100, 255))
-            self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], 0)
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], duty_cycle)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], duty_cycle)
+            self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], 0)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], 0)
+        else:
+            duty_cycle = max(0, min(power * -100, 255))
+            self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], 0)
+            self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], duty_cycle)
+            self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], duty_cycle)
+            self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], 0)
         
         print('angle: ', angle.data, 'power: ', power)
         print('error: ', self.error, 'error_sum: ', self.error_sum, 'error_diff: ', self.error_diff)
