@@ -62,7 +62,7 @@ class Pendulum(Node):
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], 0)
         
         print('angle: ', angle.data, 'power: ', power)
-        print('error: ', error, 'error_sum: ', error_sum, 'error_diff: ', error_diff)
+        print('error: ', self.error, 'error_sum: ', self.error_sum, 'error_diff: ', self.error_diff)
 
 def main(args=None):
     rclpy.init(args=args)
