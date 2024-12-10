@@ -22,6 +22,7 @@ class Pendulum(Node):
         self.angle_sub = self.create_subscription(Float64, 'angle', self.angle_callback)
         self.time_saver = time.time()
         self.prev_error = 0
+        print('Pendulum node has been created')
         
         for pin in self.PWM1_PIN:
             self.pi.set_mode(pin, pigpio.OUTPUT)
@@ -65,5 +66,8 @@ def main(args=None):
     rclpy.spin(pendulum)
     pendulum.destroy_node()
     rclpy.shutdown()
+    
+if __name__ == '__main__':
+    main()
             
     
