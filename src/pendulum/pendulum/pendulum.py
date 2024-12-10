@@ -51,14 +51,16 @@ class Pendulum(Node):
         self.prev_error = self.error
         
         if power > 0:
-            self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], power*100)
+            duty_cycle = max(0, min(power * 100, 255))  # Clamp to the range [0, 255]
+            self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], duty_cycle)
+            self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], duty_cycle)
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], 0)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], 0)
-            self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], power*100)
         else:
+            duty_cycle = max(0, min(power * 100, 255))
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], 0)
-            self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], power*100)
-            self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], power*100)
+            self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], duty_cycle)
+            self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], duty_cycle)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], 0)
         
         print('angle: ', angle.data, 'power: ', power)
