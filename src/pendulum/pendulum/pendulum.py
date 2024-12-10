@@ -22,6 +22,10 @@ class Pendulum(Node):
         self.angle_sub = self.create_subscription(Float64, 'angle', self.angle_callback, 10)
         self.time_saver = time.time()
         self.prev_error = 0
+        self.error = 0
+        self.error_sum = 0
+        self.error_diff = 0
+        
         print('Pendulum node has been created')
         
         for pin in self.PWM1_PIN:
@@ -37,14 +41,14 @@ class Pendulum(Node):
             self.pi.set_PWM_dutycycle(pin, 0)
         
     def angle_callback(self, angle):
-        error = TargetAngle - angle.data
-        error_sum += error * (time.time() - self.time_saver)
-        error_diff = (error - self.prev_error) / (time.time() - self.time_saver)
+        self.error = TargetAngle - angle.data
+        self.error_sum += self.error * (time.time() - self.time_saver)
+        self.error_diff = (self.error - self.prev_error) / (time.time() - self.time_saver)
         
-        power = kPGain * error + kIGain * error_sum + kDGain * error_diff
+        power = kPGain * self.error + kIGain * self.error_sum + kDGain * self.error_diff
         
         self.time_saver = time.time()
-        self.prev_error = error
+        self.prev_error = self.error
         
         if power > 0:
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], power)
