@@ -5,8 +5,8 @@ from std_msgs.msg import Float64
 import pigpio
 import time
 
-kPGain = 1.0
-kIGain = 0.0
+kPGain = 10.0
+kIGain = 10.0
 kDGain = 0.0
 TargetAngle = 0.0
 class Pendulum(Node):
