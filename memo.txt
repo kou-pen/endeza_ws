@@ -1,0 +1,9 @@
+Gyroscope Offsets: 
+gyro_x_offset --> -0.199237
+gyro_y_offset --> 2.12805
+gyro_z_offset --> -0.0635725
+
+Accelerometer Offsets: 
+accel_x_offset --> 0.580577
+accel_y_offset --> -0.213942
+accel_z_offset --> 8.83219

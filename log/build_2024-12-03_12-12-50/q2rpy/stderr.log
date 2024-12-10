@@ -1,0 +1,7 @@
+[01m[K/home/kohki/endeza_ws/src/q2rpy/src/q2qpy.cpp:34:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   34 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+gmake[2]: *** [CMakeFiles/q2qpy.dir/build.make:76: CMakeFiles/q2qpy.dir/src/q2qpy.cpp.o] エラー 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/q2qpy.dir/all] エラー 2
+gmake: *** [Makefile:146: all] エラー 2

@@ -1,0 +1,8 @@
+source;share/q2rpy/hook/cmake_prefix_path.ps1
+source;share/q2rpy/hook/cmake_prefix_path.dsv
+source;share/q2rpy/hook/cmake_prefix_path.sh
+source;share/q2rpy/local_setup.bash
+source;share/q2rpy/local_setup.dsv
+source;share/q2rpy/local_setup.ps1
+source;share/q2rpy/local_setup.sh
+source;share/q2rpy/local_setup.zsh

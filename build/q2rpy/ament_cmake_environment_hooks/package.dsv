@@ -1,0 +1,4 @@
+source;share/q2rpy/local_setup.bash
+source;share/q2rpy/local_setup.dsv
+source;share/q2rpy/local_setup.sh
+source;share/q2rpy/local_setup.zsh

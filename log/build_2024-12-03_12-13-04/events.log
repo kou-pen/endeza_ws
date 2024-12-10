@@ -1,0 +1,105 @@
+[0.000000] (-) TimerEvent: {}
+[0.000246] (q2rpy) JobQueued: {'identifier': 'q2rpy', 'dependencies': OrderedDict()}
+[0.000399] (q2rpy) JobStarted: {'identifier': 'q2rpy'}
+[0.006725] (q2rpy) JobProgress: {'identifier': 'q2rpy', 'progress': 'cmake'}
+[0.007212] (q2rpy) JobProgress: {'identifier': 'q2rpy', 'progress': 'build'}
+[0.007667] (q2rpy) Command: {'cmd': ['/home/kohki/.local/bin/cmake', '--build', '/home/kohki/endeza_ws/build/q2rpy', '--', '-j12', '-l12'], 'cwd': '/home/kohki/endeza_ws/build/q2rpy', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'kohki'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/include/tbb/lib:/usr/include/tbb/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('CHROME_DESKTOP', 'code.desktop'), ('HOME', '/home/kohki'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.95.3'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('MANAGERPID', '1643'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SYSTEMD_EXEC_PID', '2002'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10898'), ('ROS_DISTRO', 'humble'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/kohki/ydlidar_ros2_ws/install:/home/kohki/turtlebot3_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'kohki'), ('JOURNAL_STREAM', '8:15246'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/kohki/.gazebo/models:/home/kohki/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kohki/.gazebo/models:/home/kohki/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models'), ('USERNAME', 'kohki'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/kohki/.local/bin:/opt/ros/humble/bin:/home/kohki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kohki-ubuntuPC:@/tmp/.ICE-unix/1974,unix/kohki-ubuntuPC:/tmp/.ICE-unix/1974'), ('INVOCATION_ID', '9c5c5671759e43acbcb215d16cd90450'), ('GDK_BACKEND', 'x11'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_MENU_PREFIX', 'gnome-'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7cf356cfa9.sock'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('AMENT_PREFIX_PATH', '/home/kohki/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/home/kohki/turtlebot3_ws/install/turtlebot3:/home/kohki/turtlebot3_ws/install/turtlebot3_teleop:/home/kohki/turtlebot3_ws/install/turtlebot3_simulations:/home/kohki/turtlebot3_ws/install/turtlebot3_bringup:/home/kohki/turtlebot3_ws/install/turtlebot3_node:/home/kohki/turtlebot3_ws/install/turtlebot3_navigation2:/home/kohki/turtlebot3_ws/install/turtlebot3_gazebo:/home/kohki/turtlebot3_ws/install/turtlebot3_fake_node:/home/kohki/turtlebot3_ws/install/turtlebot3_example:/home/kohki/turtlebot3_ws/install/turtlebot3_description:/home/kohki/turtlebot3_ws/install/turtlebot3_cartographer:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TBB_ROOT', '/usr/include/tbb'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kohki/endeza_ws/build/q2rpy'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kohki/turtlebot3_ws/build/turtlebot3_teleop:/home/kohki/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/kohki/turtlebot3_ws/build/turtlebot3_example:/home/kohki/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kohki/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/home/kohki/turtlebot3_ws/install/turtlebot3:/home/kohki/turtlebot3_ws/install/turtlebot3_simulations:/home/kohki/turtlebot3_ws/install/turtlebot3_bringup:/home/kohki/turtlebot3_ws/install/turtlebot3_node:/home/kohki/turtlebot3_ws/install/turtlebot3_navigation2:/home/kohki/turtlebot3_ws/install/turtlebot3_gazebo:/home/kohki/turtlebot3_ws/install/turtlebot3_fake_node:/home/kohki/turtlebot3_ws/install/turtlebot3_description:/home/kohki/turtlebot3_ws/install/turtlebot3_cartographer:/home/kohki/turtlebot3_ws/install/turtlebot3_teleop:/home/kohki/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble')]), 'shell': False}
+[0.051407] (q2rpy) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/q2qpy.dir/src/q2qpy.cpp.o\x1b[0m\n'}
+[0.099877] (-) TimerEvent: {}
+[0.200140] (-) TimerEvent: {}
+[0.300387] (-) TimerEvent: {}
+[0.400650] (-) TimerEvent: {}
+[0.500889] (-) TimerEvent: {}
+[0.601155] (-) TimerEvent: {}
+[0.701419] (-) TimerEvent: {}
+[0.801665] (-) TimerEvent: {}
+[0.901941] (-) TimerEvent: {}
+[1.002176] (-) TimerEvent: {}
+[1.102417] (-) TimerEvent: {}
+[1.202692] (-) TimerEvent: {}
+[1.302950] (-) TimerEvent: {}
+[1.403201] (-) TimerEvent: {}
+[1.503476] (-) TimerEvent: {}
+[1.603752] (-) TimerEvent: {}
+[1.704010] (-) TimerEvent: {}
+[1.804277] (-) TimerEvent: {}
+[1.904567] (-) TimerEvent: {}
+[2.004828] (-) TimerEvent: {}
+[2.105084] (-) TimerEvent: {}
+[2.205345] (-) TimerEvent: {}
+[2.305614] (-) TimerEvent: {}
+[2.405877] (-) TimerEvent: {}
+[2.506132] (-) TimerEvent: {}
+[2.606378] (-) TimerEvent: {}
+[2.706627] (-) TimerEvent: {}
+[2.806899] (-) TimerEvent: {}
+[2.907235] (-) TimerEvent: {}
+[3.007522] (-) TimerEvent: {}
+[3.107792] (-) TimerEvent: {}
+[3.208067] (-) TimerEvent: {}
+[3.308337] (-) TimerEvent: {}
+[3.408654] (-) TimerEvent: {}
+[3.508960] (-) TimerEvent: {}
+[3.609188] (-) TimerEvent: {}
+[3.709450] (-) TimerEvent: {}
+[3.809714] (-) TimerEvent: {}
+[3.909982] (-) TimerEvent: {}
+[4.010238] (-) TimerEvent: {}
+[4.110484] (-) TimerEvent: {}
+[4.210749] (-) TimerEvent: {}
+[4.311024] (-) TimerEvent: {}
+[4.411291] (-) TimerEvent: {}
+[4.511566] (-) TimerEvent: {}
+[4.611833] (-) TimerEvent: {}
+[4.712104] (-) TimerEvent: {}
+[4.812351] (-) TimerEvent: {}
+[4.912605] (-) TimerEvent: {}
+[5.012836] (-) TimerEvent: {}
+[5.113164] (-) TimerEvent: {}
+[5.213462] (-) TimerEvent: {}
+[5.313775] (-) TimerEvent: {}
+[5.414100] (-) TimerEvent: {}
+[5.514363] (-) TimerEvent: {}
+[5.614611] (-) TimerEvent: {}
+[5.714861] (-) TimerEvent: {}
+[5.815161] (-) TimerEvent: {}
+[5.915399] (-) TimerEvent: {}
+[6.015690] (-) TimerEvent: {}
+[6.115986] (-) TimerEvent: {}
+[6.216303] (-) TimerEvent: {}
+[6.316549] (-) TimerEvent: {}
+[6.416810] (-) TimerEvent: {}
+[6.517128] (-) TimerEvent: {}
+[6.617374] (-) TimerEvent: {}
+[6.717635] (-) TimerEvent: {}
+[6.743994] (q2rpy) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable q2qpy\x1b[0m\n'}
+[6.817750] (-) TimerEvent: {}
+[6.918022] (-) TimerEvent: {}
+[7.018291] (-) TimerEvent: {}
+[7.077443] (q2rpy) StdoutLine: {'line': b'[100%] Built target q2qpy\n'}
+[7.089597] (q2rpy) CommandEnded: {'returncode': 0}
+[7.118371] (-) TimerEvent: {}
+[7.123031] (q2rpy) JobProgress: {'identifier': 'q2rpy', 'progress': 'install'}
+[7.146370] (q2rpy) Command: {'cmd': ['/home/kohki/.local/bin/cmake', '--install', '/home/kohki/endeza_ws/build/q2rpy'], 'cwd': '/home/kohki/endeza_ws/build/q2rpy', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'kohki'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/include/tbb/lib:/usr/include/tbb/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('CHROME_DESKTOP', 'code.desktop'), ('HOME', '/home/kohki'), ('DESKTOP_SESSION', 'ubuntu'), ('TERM_PROGRAM_VERSION', '1.95.3'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('MANAGERPID', '1643'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SYSTEMD_EXEC_PID', '2002'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10898'), ('ROS_DISTRO', 'humble'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/kohki/ydlidar_ros2_ws/install:/home/kohki/turtlebot3_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'kohki'), ('JOURNAL_STREAM', '8:15246'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/kohki/.gazebo/models:/home/kohki/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:/home/kohki/.gazebo/models:/home/kohki/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models'), ('USERNAME', 'kohki'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/kohki/.local/bin:/opt/ros/humble/bin:/home/kohki/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kohki-ubuntuPC:@/tmp/.ICE-unix/1974,unix/kohki-ubuntuPC:/tmp/.ICE-unix/1974'), ('INVOCATION_ID', '9c5c5671759e43acbcb215d16cd90450'), ('GDK_BACKEND', 'x11'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_MENU_PREFIX', 'gnome-'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7cf356cfa9.sock'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('AMENT_PREFIX_PATH', '/home/kohki/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/home/kohki/turtlebot3_ws/install/turtlebot3:/home/kohki/turtlebot3_ws/install/turtlebot3_teleop:/home/kohki/turtlebot3_ws/install/turtlebot3_simulations:/home/kohki/turtlebot3_ws/install/turtlebot3_bringup:/home/kohki/turtlebot3_ws/install/turtlebot3_node:/home/kohki/turtlebot3_ws/install/turtlebot3_navigation2:/home/kohki/turtlebot3_ws/install/turtlebot3_gazebo:/home/kohki/turtlebot3_ws/install/turtlebot3_fake_node:/home/kohki/turtlebot3_ws/install/turtlebot3_example:/home/kohki/turtlebot3_ws/install/turtlebot3_description:/home/kohki/turtlebot3_ws/install/turtlebot3_cartographer:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TBB_ROOT', '/usr/include/tbb'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kohki/endeza_ws/build/q2rpy'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kohki/turtlebot3_ws/build/turtlebot3_teleop:/home/kohki/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/kohki/turtlebot3_ws/build/turtlebot3_example:/home/kohki/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kohki/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/home/kohki/turtlebot3_ws/install/turtlebot3:/home/kohki/turtlebot3_ws/install/turtlebot3_simulations:/home/kohki/turtlebot3_ws/install/turtlebot3_bringup:/home/kohki/turtlebot3_ws/install/turtlebot3_node:/home/kohki/turtlebot3_ws/install/turtlebot3_navigation2:/home/kohki/turtlebot3_ws/install/turtlebot3_gazebo:/home/kohki/turtlebot3_ws/install/turtlebot3_fake_node:/home/kohki/turtlebot3_ws/install/turtlebot3_description:/home/kohki/turtlebot3_ws/install/turtlebot3_cartographer:/home/kohki/turtlebot3_ws/install/turtlebot3_teleop:/home/kohki/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble')]), 'shell': False}
+[7.166716] (q2rpy) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.166889] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/lib/q2rpy/q2qpy\n'}
+[7.168649] (q2rpy) StdoutLine: {'line': b'-- Set runtime path of "/home/kohki/endeza_ws/install/q2rpy/lib/q2rpy/q2qpy" to ""\n'}
+[7.168715] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/ament_index/resource_index/package_run_dependencies/q2rpy\n'}
+[7.168831] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/ament_index/resource_index/parent_prefix_path/q2rpy\n'}
+[7.168940] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/environment/ament_prefix_path.sh\n'}
+[7.169004] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/environment/ament_prefix_path.dsv\n'}
+[7.169080] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/environment/path.sh\n'}
+[7.169160] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/environment/path.dsv\n'}
+[7.169236] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/local_setup.bash\n'}
+[7.169306] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/local_setup.sh\n'}
+[7.169383] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/local_setup.zsh\n'}
+[7.169454] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/local_setup.dsv\n'}
+[7.169529] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/package.dsv\n'}
+[7.169634] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/ament_index/resource_index/packages/q2rpy\n'}
+[7.169711] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/cmake/q2rpyConfig.cmake\n'}
+[7.169760] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/cmake/q2rpyConfig-version.cmake\n'}
+[7.169816] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/kohki/endeza_ws/install/q2rpy/share/q2rpy/package.xml\n'}
+[7.173823] (q2rpy) CommandEnded: {'returncode': 0}
+[7.218482] (-) TimerEvent: {}
+[7.219446] (q2rpy) JobEnded: {'identifier': 'q2rpy', 'rc': 0}
+[7.219842] (-) EventReactorShutdown: {}
