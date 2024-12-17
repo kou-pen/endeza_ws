@@ -8,7 +8,7 @@ import time
 kPGain = 3000.0
 kIGain = 400.0
 kDGain = 0.0
-TargetAngle = -0.14
+TargetAngle = -0.19
 class Pendulum(Node):
     node_name = 'pendulum'
     PWM1_PIN = [17, 18]
