@@ -51,7 +51,7 @@ class Pendulum(Node):
         self.time_saver = time.time()
         self.prev_error = self.error
         
-        if abs(angle) > (math.pi * 0.25):
+        if (abs(angle.data) > (math.pi * 0.25)):
             self.error_sum = 0.0
             power = 0
         
