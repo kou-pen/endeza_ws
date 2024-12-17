@@ -6,10 +6,10 @@ import pigpio
 import time
 import math
 
-kPGain = 3000.0
-kIGain = 400.0
+kPGain = 3600.0
+kIGain = 0.0
 kDGain = 0.0
-TargetAngle = -0.19
+TargetAngle = -0.32
 class Pendulum(Node):
     node_name = 'pendulum'
     PWM1_PIN = [17, 18]
@@ -56,13 +56,13 @@ class Pendulum(Node):
             power = 0
         
         if power > 0:
-            duty_cycle = max(0, min(power * 100, 255))  # Clamp to the range [0, 255]
+            duty_cycle = max(0, min(power * 1, 255))  # Clamp to the range [0, 255]
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], duty_cycle)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], duty_cycle)
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], 0)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], 0)
         else:
-            duty_cycle = max(0, min(power * -100, 255))
+            duty_cycle = max(0, min(power * -1, 255))
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], 0)
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], duty_cycle)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], duty_cycle)
