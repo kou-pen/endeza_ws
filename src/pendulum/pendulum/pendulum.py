@@ -4,6 +4,7 @@ from std_msgs.msg import Float64
 
 import pigpio
 import time
+import math
 
 kPGain = 3000.0
 kIGain = 400.0
@@ -40,7 +41,7 @@ class Pendulum(Node):
             self.pi.set_PWM_range(pin, self.RANGE)
             self.pi.set_PWM_dutycycle(pin, 0)
         
-    def angle_callback(self, angle):
+    def angle_callback(self, angle):  
         self.error = TargetAngle - angle.data
         self.error_sum += self.error * (time.time() - self.time_saver)
         self.error_diff = (self.error - self.prev_error) / (time.time() - self.time_saver)
@@ -49,6 +50,10 @@ class Pendulum(Node):
         
         self.time_saver = time.time()
         self.prev_error = self.error
+        
+        if abs(angle) > (math.pi * 0.25):
+            self.error_sum = 0.0
+            power = 0
         
         if power > 0:
             duty_cycle = max(0, min(power * 100, 255))  # Clamp to the range [0, 255]
