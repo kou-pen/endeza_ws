@@ -48,8 +48,8 @@ class CameraMove(Node):
         corners, ids, rejectedCandidates = self.detector.detectMarkers(gray)
         # frame = aruco.drawDetectedMarkers(frame, corners, ids)
         
-        img = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")
-        self.image_pub.publish(img)
+        # img = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")
+        # self.image_pub.publish(img)
         
         if self.markID in np.ravel(ids):
             index = np.where(ids == self.markID)[0][0]
