@@ -21,6 +21,7 @@ class Pendulum(Node):
         super().__init__(self.node_name)
         self.pi = pigpio.pi()
         self.angle_sub = self.create_subscription(Float64, 'angle', self.angle_callback, 10)
+        self.rotate_sub = self.create_subscription(Float64, 'rotate_power', self.rotate_callback, 10)
         self.time_saver = time.time()
         self.prev_error = 0
         self.error = 0
@@ -46,30 +47,33 @@ class Pendulum(Node):
         self.error_sum += self.error * (time.time() - self.time_saver)
         self.error_diff = (self.error - self.prev_error) / (time.time() - self.time_saver)
         
-        power = kPGain * self.error + kIGain * self.error_sum + kDGain * self.error_diff
+        self.power = kPGain * self.error + kIGain * self.error_sum + kDGain * self.error_diff
         
         self.time_saver = time.time()
         self.prev_error = self.error
         
         if (abs(angle.data) > (math.pi * 0.25)):
             self.error_sum = 0.0
-            power = 0
+            self.power = 0
         
-        if power > 0:
-            duty_cycle = max(0, min(power * 1, 255))  # Clamp to the range [0, 255]
+        if self.power > 0:
+            duty_cycle = max(0, min(self.power * 1, 255))  # Clamp to the range [0, 255]
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], duty_cycle)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], duty_cycle)
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], 0)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], 0)
         else:
-            duty_cycle = max(0, min(power * -1, 255))
+            duty_cycle = max(0, min(self.power * -1, 255))
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], 0)
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], duty_cycle)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], duty_cycle)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], 0)
         
-        print('angle: ', angle.data, 'power: ', power)
+        print('angle: ', angle.data, 'power: ', self.power)
         print('error: ', self.error, 'error_sum: ', self.error_sum, 'error_diff: ', self.error_diff)
+        
+    def rotate_callback(self, rotate_power):
+        pass
 
 def main(args=None):
     rclpy.init(args=args)
