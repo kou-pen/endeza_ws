@@ -73,11 +73,13 @@ class CameraMove(Node):
             # self.front_power_pub.publish(Float64(data=float(front_power)))
             # self.rotate_power_pub.publish(Float64(data=float(rotate_power)))
             
-            # from_center_x = (center[0] - 360) if center[0] < 360 else (360 - center[0])
+            # from_center_x = (center[0] - 360) if center[0] > 360 else (360 - center[0])
             from_center_x = center[0] - 360
             print(from_center_x, center[0])
             
             self.rotate_power_pub.publish(Float64(data=float(from_center_x / 20)))
+            return
+        self.rotate_power_pub.publish(Float64(data=float(0.0)))
             
 
 def main(args=None):

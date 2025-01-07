@@ -27,6 +27,8 @@ class Pendulum(Node):
         self.error = 0
         self.error_sum = 0
         self.error_diff = 0
+        self.diff_lr = 0
+        self.power = 0
         
         print('Pendulum node has been created')
         
@@ -57,23 +59,27 @@ class Pendulum(Node):
             self.power = 0
         
         if self.power > 0:
-            duty_cycle = max(0, min(self.power * 1, 255))  # Clamp to the range [0, 255]
-            self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], duty_cycle)
-            self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], duty_cycle)
+            duty_cycle_l = max(0, min(self.power + self.diff_lr, 255))  # Clamp to the range [0, 255]
+            duty_cycle_r = max(0, min(self.power - self.diff_lr, 255)) # Clamp to the range [0, 255]
+            
+            self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], duty_cycle_l)
+            self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], duty_cycle_r)
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], 0)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], 0)
         else:
-            duty_cycle = max(0, min(self.power * -1, 255))
+            duty_cycle_l = max(0, min(self.diff_lr + self.power * -1, 255))
+            duty_cycle_r = max(0, min(-self.diff_lr + self.power * -1, 255))
+            
             self.pi.set_PWM_dutycycle(self.PWM1_PIN[1], 0)
-            self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], duty_cycle)
-            self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], duty_cycle)
+            self.pi.set_PWM_dutycycle(self.PWM1_PIN[0], duty_cycle_r)
+            self.pi.set_PWM_dutycycle(self.PWM2_PIN[1], duty_cycle_l)
             self.pi.set_PWM_dutycycle(self.PWM2_PIN[0], 0)
         
         print('angle: ', angle.data, 'power: ', self.power)
         print('error: ', self.error, 'error_sum: ', self.error_sum, 'error_diff: ', self.error_diff)
         
     def rotate_callback(self, rotate_power):
-        pass
+        self.diff_lr = rotate_power.data
 
 def main(args=None):
     rclpy.init(args=args)
