@@ -1,6 +1,8 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float64
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
 import cv2
 from cv2 import aruco
 import numpy as np
@@ -17,6 +19,8 @@ class CameraMove(Node):
         self.parameters = aruco.DetectorParameters()
         self.markID = 1
         self.detector = aruco.ArucoDetector(self.dictionary, self.parameters)
+        self.bridge = CvBridge()
+        
         
         self.cap = cv2.VideoCapture(0)
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
@@ -29,6 +33,7 @@ class CameraMove(Node):
         
         self.front_power_pub = self.create_publisher(Float64, 'front_power', 10)
         self.side_power_pub = self.create_publisher(Float64, 'side_power', 10)
+        self.image_pub = self.create_publisher(Image, 'image', 10)
         
         self.timer = self.create_timer(1/self.Framerate, self.timer_callback)
         
@@ -37,9 +42,14 @@ class CameraMove(Node):
         if not ret:
             return
         
+        
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         
         corners, ids, rejectedCandidates = self.detector.detectMarkers(gray)
+        frame = aruco.drawDetectedMarkers(frame, corners, ids)
+        
+        img = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")
+        self.image_pub.publish(img)
         
         if self.markID in np.ravel(ids):
             index = np.where(ids == self.markID)[0][0]
@@ -56,11 +66,12 @@ class CameraMove(Node):
             
             side_power = side_x / constant
             front_power = front_y / constant
+            print(side_power, front_power)
             
             # TODO: Calculate the power of the front and side motors
             
-            self.front_power_pub.publish(Float64(data=front_power))
-            self.side_power_pub.publish(Float64(data=side_power))
+            self.front_power_pub.publish(Float64(data=float(front_power)))
+            self.side_power_pub.publish(Float64(data=float(side_power)))
             
 
 def main(args=None):
