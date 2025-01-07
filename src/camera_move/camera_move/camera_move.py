@@ -14,7 +14,7 @@ constant = 720 * 5.15
 class CameraMove(Node):
     def __init__(self):
         super().__init__('camera_move')
-        self.Framerate = 60
+        self.Framerate = 15
         self.dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
         self.parameters = aruco.DetectorParameters()
         self.markID = 1
