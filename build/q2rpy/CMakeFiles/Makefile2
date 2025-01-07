@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/kohki/.local/lib/python3.10/site-packages/cmake/data/bin/cmake
+CMAKE_COMMAND = /home/a-raspi1/.local/lib/python3.10/site-packages/cmake/data/bin/cmake
 
 # The command to remove a file.
-RM = /home/kohki/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f
+RM = /home/a-raspi1/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kohki/endeza_ws/src/q2rpy
+CMAKE_SOURCE_DIR = /home/a-raspi1/endeza_ws/src/q2rpy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kohki/endeza_ws/build/q2rpy
+CMAKE_BINARY_DIR = /home/a-raspi1/endeza_ws/build/q2rpy
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -83,14 +83,14 @@ clean: CMakeFiles/q2qpy.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/q2rpy_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kohki/endeza_ws/build/q2rpy/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/a-raspi1/endeza_ws/build/q2rpy/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kohki/endeza_ws/build/q2rpy/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/a-raspi1/endeza_ws/build/q2rpy/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kohki/endeza_ws/build/q2rpy/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/a-raspi1/endeza_ws/build/q2rpy/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -109,14 +109,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/q2rpy_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2rpy_uninstall.dir/build.make CMakeFiles/q2rpy_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2rpy_uninstall.dir/build.make CMakeFiles/q2rpy_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kohki/endeza_ws/build/q2rpy/CMakeFiles --progress-num= "Built target q2rpy_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/a-raspi1/endeza_ws/build/q2rpy/CMakeFiles --progress-num= "Built target q2rpy_uninstall"
 .PHONY : CMakeFiles/q2rpy_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/q2rpy_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kohki/endeza_ws/build/q2rpy/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/a-raspi1/endeza_ws/build/q2rpy/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/q2rpy_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kohki/endeza_ws/build/q2rpy/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/a-raspi1/endeza_ws/build/q2rpy/CMakeFiles 0
 .PHONY : CMakeFiles/q2rpy_uninstall.dir/rule
 
 # Convenience name for target.
@@ -135,14 +135,14 @@ CMakeFiles/q2rpy_uninstall.dir/clean:
 CMakeFiles/q2qpy.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2qpy.dir/build.make CMakeFiles/q2qpy.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/q2qpy.dir/build.make CMakeFiles/q2qpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kohki/endeza_ws/build/q2rpy/CMakeFiles --progress-num=1,2 "Built target q2qpy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/a-raspi1/endeza_ws/build/q2rpy/CMakeFiles --progress-num=1,2 "Built target q2qpy"
 .PHONY : CMakeFiles/q2qpy.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/q2qpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kohki/endeza_ws/build/q2rpy/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/a-raspi1/endeza_ws/build/q2rpy/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/q2qpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kohki/endeza_ws/build/q2rpy/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/a-raspi1/endeza_ws/build/q2rpy/CMakeFiles 0
 .PHONY : CMakeFiles/q2qpy.dir/rule
 
 # Convenience name for target.

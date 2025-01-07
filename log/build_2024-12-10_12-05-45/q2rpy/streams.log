@@ -1,0 +1,73 @@
+[1.545s] Invoking command in '/home/a-raspi1/endeza_ws/build/q2rpy': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake /home/a-raspi1/endeza_ws/src/q2rpy -DCMAKE_INSTALL_PREFIX=/home/a-raspi1/endeza_ws/install/q2rpy
+[2.361s] -- The C compiler identification is GNU 11.4.0
+[3.216s] -- The CXX compiler identification is GNU 11.4.0
+[3.329s] -- Detecting C compiler ABI info
+[3.761s] -- Detecting C compiler ABI info - done
+[3.810s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.813s] -- Detecting C compile features
+[3.816s] -- Detecting C compile features - done
+[3.872s] -- Detecting CXX compiler ABI info
+[4.271s] -- Detecting CXX compiler ABI info - done
+[4.321s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.322s] -- Detecting CXX compile features
+[4.325s] -- Detecting CXX compile features - done
+[4.370s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.179s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.020s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[6.574s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.645s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.746s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.884s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.064s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.563s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.600s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.408s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[8.733s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.246s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.356s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.766s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[9.772s] -- Found Threads: TRUE  
+[10.257s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[10.538s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[10.711s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[11.542s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[11.769s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[11.779s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[11.780s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[11.821s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[12.365s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[12.366s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/a-raspi1/endeza_ws/src/q2rpy/include>
+[12.366s] -- Configured cppcheck exclude dirs and/or files: 
+[12.372s] -- Added test 'lint_cmake' to check CMake code style
+[12.380s] -- Added test 'uncrustify' to check C / C++ code style
+[12.380s] -- Configured uncrustify additional arguments: 
+[12.385s] -- Added test 'xmllint' to check XML markup files
+[12.397s] -- Configuring done (10.7s)
+[12.508s] -- Generating done (0.0s)
+[12.520s] -- Build files have been written to: /home/a-raspi1/endeza_ws/build/q2rpy
+[12.600s] Invoked command in '/home/a-raspi1/endeza_ws/build/q2rpy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake /home/a-raspi1/endeza_ws/src/q2rpy -DCMAKE_INSTALL_PREFIX=/home/a-raspi1/endeza_ws/install/q2rpy
+[12.614s] Invoking command in '/home/a-raspi1/endeza_ws/build/q2rpy': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake --build /home/a-raspi1/endeza_ws/build/q2rpy -- -j4 -l4
+[13.055s] [ 50%] [32mBuilding CXX object CMakeFiles/q2qpy.dir/src/q2qpy.cpp.o[0m
+[56.434s] [100%] [32m[1mLinking CXX executable q2qpy[0m
+[59.014s] [100%] Built target q2qpy
+[59.057s] Invoked command in '/home/a-raspi1/endeza_ws/build/q2rpy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake --build /home/a-raspi1/endeza_ws/build/q2rpy -- -j4 -l4
+[59.478s] Invoking command in '/home/a-raspi1/endeza_ws/build/q2rpy': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake --install /home/a-raspi1/endeza_ws/build/q2rpy
+[59.610s] -- Install configuration: ""
+[59.611s] -- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/lib/q2rpy/q2qpy
+[59.645s] -- Set runtime path of "/home/a-raspi1/endeza_ws/install/q2rpy/lib/q2rpy/q2qpy" to ""
+[59.645s] -- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/ament_index/resource_index/package_run_dependencies/q2rpy
+[59.646s] -- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/ament_index/resource_index/parent_prefix_path/q2rpy
+[59.647s] -- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/environment/ament_prefix_path.sh
+[59.649s] -- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/environment/ament_prefix_path.dsv
+[59.650s] -- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/environment/path.sh
+[59.652s] -- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/environment/path.dsv
+[59.653s] -- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/local_setup.bash
+[59.653s] -- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/local_setup.sh
+[59.655s] -- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/local_setup.zsh
+[59.655s] -- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/local_setup.dsv
+[59.657s] -- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.dsv
+[59.658s] -- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/ament_index/resource_index/packages/q2rpy
+[59.659s] -- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/cmake/q2rpyConfig.cmake
+[59.659s] -- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/cmake/q2rpyConfig-version.cmake
+[59.659s] -- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.xml
+[59.688s] Invoked command in '/home/a-raspi1/endeza_ws/build/q2rpy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake --install /home/a-raspi1/endeza_ws/build/q2rpy

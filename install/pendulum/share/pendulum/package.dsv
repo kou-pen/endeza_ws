@@ -1,0 +1,6 @@
+source;share/pendulum/hook/pythonpath.ps1
+source;share/pendulum/hook/pythonpath.dsv
+source;share/pendulum/hook/pythonpath.sh
+source;share/pendulum/hook/ament_prefix_path.ps1
+source;share/pendulum/hook/ament_prefix_path.dsv
+source;share/pendulum/hook/ament_prefix_path.sh

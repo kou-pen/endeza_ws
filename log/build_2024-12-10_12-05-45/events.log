@@ -1,0 +1,716 @@
+[0.000000] (-) TimerEvent: {}
+[0.001938] (pendulum) JobQueued: {'identifier': 'pendulum', 'dependencies': OrderedDict()}
+[0.002607] (q2rpy) JobQueued: {'identifier': 'q2rpy', 'dependencies': OrderedDict()}
+[0.003125] (pendulum) JobStarted: {'identifier': 'pendulum'}
+[0.042865] (q2rpy) JobStarted: {'identifier': 'q2rpy'}
+[0.098822] (-) TimerEvent: {}
+[0.199642] (-) TimerEvent: {}
+[0.300381] (-) TimerEvent: {}
+[0.401099] (-) TimerEvent: {}
+[0.501904] (-) TimerEvent: {}
+[0.602597] (-) TimerEvent: {}
+[0.703251] (-) TimerEvent: {}
+[0.803900] (-) TimerEvent: {}
+[0.904627] (-) TimerEvent: {}
+[1.005375] (-) TimerEvent: {}
+[1.106130] (-) TimerEvent: {}
+[1.206895] (-) TimerEvent: {}
+[1.307613] (-) TimerEvent: {}
+[1.408382] (-) TimerEvent: {}
+[1.550131] (-) TimerEvent: {}
+[1.574483] (q2rpy) JobProgress: {'identifier': 'q2rpy', 'progress': 'cmake'}
+[1.576737] (q2rpy) Command: {'cmd': ['/home/a-raspi1/.local/bin/cmake', '/home/a-raspi1/endeza_ws/src/q2rpy', '-DCMAKE_INSTALL_PREFIX=/home/a-raspi1/endeza_ws/install/q2rpy'], 'cwd': '/home/a-raspi1/endeza_ws/build/q2rpy', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'a-raspi1'), ('SSH_CLIENT', '192.168.251.84 40520 22'), ('XDG_SESSION_TYPE', 'tty'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '2'), ('HOME', '/home/a-raspi1'), ('MOTD_SHOWN', 'pam'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a-raspi1'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/a-raspi1/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/a-raspi1/endeza_ws/build/q2rpy'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('SSH_CONNECTION', '192.168.251.84 40520 192.168.251.103 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.650330] (-) TimerEvent: {}
+[1.751839] (-) TimerEvent: {}
+[1.852678] (-) TimerEvent: {}
+[1.953471] (-) TimerEvent: {}
+[2.054212] (-) TimerEvent: {}
+[2.155048] (-) TimerEvent: {}
+[2.256177] (-) TimerEvent: {}
+[2.357472] (-) TimerEvent: {}
+[2.403809] (q2rpy) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.457618] (-) TimerEvent: {}
+[2.558665] (-) TimerEvent: {}
+[2.659362] (-) TimerEvent: {}
+[2.760167] (-) TimerEvent: {}
+[2.860980] (-) TimerEvent: {}
+[2.962004] (-) TimerEvent: {}
+[3.062868] (-) TimerEvent: {}
+[3.163725] (-) TimerEvent: {}
+[3.258526] (q2rpy) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.263874] (-) TimerEvent: {}
+[3.364656] (-) TimerEvent: {}
+[3.371863] (q2rpy) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.464985] (-) TimerEvent: {}
+[3.566324] (-) TimerEvent: {}
+[3.598304] (pendulum) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/pendulum', 'build', '--build-base', '/home/a-raspi1/endeza_ws/build/pendulum/build', 'install', '--record', '/home/a-raspi1/endeza_ws/build/pendulum/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/a-raspi1/endeza_ws/src/pendulum', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'a-raspi1', 'SSH_CLIENT': '192.168.251.84 40520 22', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'SHLVL': '2', 'HOME': '/home/a-raspi1', 'MOTD_SHOWN': 'pam', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'a-raspi1', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/a-raspi1/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'ja_JP.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/a-raspi1/endeza_ws/build/pendulum', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'SSH_CONNECTION': '192.168.251.84 40520 192.168.251.103 22', 'PYTHONPATH': '/home/a-raspi1/endeza_ws/build/pendulum/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[3.666722] (-) TimerEvent: {}
+[3.768199] (-) TimerEvent: {}
+[3.804016] (q2rpy) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.853144] (q2rpy) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.856308] (q2rpy) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.859459] (q2rpy) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.868390] (-) TimerEvent: {}
+[3.914912] (q2rpy) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.968608] (-) TimerEvent: {}
+[4.069747] (-) TimerEvent: {}
+[4.171373] (-) TimerEvent: {}
+[4.272845] (-) TimerEvent: {}
+[4.314082] (q2rpy) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.363615] (q2rpy) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.365311] (q2rpy) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.367831] (q2rpy) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.372999] (-) TimerEvent: {}
+[4.412700] (q2rpy) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.473412] (-) TimerEvent: {}
+[4.574661] (-) TimerEvent: {}
+[4.675466] (-) TimerEvent: {}
+[4.776316] (-) TimerEvent: {}
+[4.877051] (-) TimerEvent: {}
+[4.977799] (-) TimerEvent: {}
+[5.079509] (-) TimerEvent: {}
+[5.181662] (-) TimerEvent: {}
+[5.222346] (q2rpy) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.226604] (pendulum) StdoutLine: {'line': b'running egg_info\n'}
+[5.228979] (pendulum) StdoutLine: {'line': b'creating ../../build/pendulum/pendulum.egg-info\n'}
+[5.229881] (pendulum) StdoutLine: {'line': b'writing ../../build/pendulum/pendulum.egg-info/PKG-INFO\n'}
+[5.231169] (pendulum) StdoutLine: {'line': b'writing dependency_links to ../../build/pendulum/pendulum.egg-info/dependency_links.txt\n'}
+[5.231985] (pendulum) StdoutLine: {'line': b'writing entry points to ../../build/pendulum/pendulum.egg-info/entry_points.txt\n'}
+[5.232737] (pendulum) StdoutLine: {'line': b'writing requirements to ../../build/pendulum/pendulum.egg-info/requires.txt\n'}
+[5.233654] (pendulum) StdoutLine: {'line': b'writing top-level names to ../../build/pendulum/pendulum.egg-info/top_level.txt\n'}
+[5.234530] (pendulum) StdoutLine: {'line': b"writing manifest file '../../build/pendulum/pendulum.egg-info/SOURCES.txt'\n"}
+[5.245200] (pendulum) StdoutLine: {'line': b"reading manifest file '../../build/pendulum/pendulum.egg-info/SOURCES.txt'\n"}
+[5.248929] (pendulum) StdoutLine: {'line': b"writing manifest file '../../build/pendulum/pendulum.egg-info/SOURCES.txt'\n"}
+[5.249849] (pendulum) StdoutLine: {'line': b'running build\n'}
+[5.250406] (pendulum) StdoutLine: {'line': b'running build_py\n'}
+[5.251008] (pendulum) StdoutLine: {'line': b'creating /home/a-raspi1/endeza_ws/build/pendulum/build\n'}
+[5.251780] (pendulum) StdoutLine: {'line': b'creating /home/a-raspi1/endeza_ws/build/pendulum/build/lib\n'}
+[5.252595] (pendulum) StdoutLine: {'line': b'creating /home/a-raspi1/endeza_ws/build/pendulum/build/lib/pendulum\n'}
+[5.253336] (pendulum) StdoutLine: {'line': b'copying pendulum/pendulum.py -> /home/a-raspi1/endeza_ws/build/pendulum/build/lib/pendulum\n'}
+[5.253925] (pendulum) StdoutLine: {'line': b'copying pendulum/__init__.py -> /home/a-raspi1/endeza_ws/build/pendulum/build/lib/pendulum\n'}
+[5.254642] (pendulum) StdoutLine: {'line': b'running install\n'}
+[5.255725] (pendulum) StdoutLine: {'line': b'running install_lib\n'}
+[5.259611] (pendulum) StdoutLine: {'line': b'creating /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum\n'}
+[5.260621] (pendulum) StdoutLine: {'line': b'copying /home/a-raspi1/endeza_ws/build/pendulum/build/lib/pendulum/pendulum.py -> /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum\n'}
+[5.261408] (pendulum) StdoutLine: {'line': b'copying /home/a-raspi1/endeza_ws/build/pendulum/build/lib/pendulum/__init__.py -> /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum\n'}
+[5.264567] (pendulum) StdoutLine: {'line': b'byte-compiling /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum/pendulum.py to pendulum.cpython-310.pyc\n'}
+[5.268627] (pendulum) StdoutLine: {'line': b'byte-compiling /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum/__init__.py to __init__.cpython-310.pyc\n'}
+[5.269901] (pendulum) StdoutLine: {'line': b'running install_data\n'}
+[5.270589] (pendulum) StdoutLine: {'line': b'creating /home/a-raspi1/endeza_ws/install/pendulum/share/ament_index\n'}
+[5.271266] (pendulum) StdoutLine: {'line': b'creating /home/a-raspi1/endeza_ws/install/pendulum/share/ament_index/resource_index\n'}
+[5.271987] (pendulum) StdoutLine: {'line': b'creating /home/a-raspi1/endeza_ws/install/pendulum/share/ament_index/resource_index/packages\n'}
+[5.272805] (pendulum) StdoutLine: {'line': b'copying resource/pendulum -> /home/a-raspi1/endeza_ws/install/pendulum/share/ament_index/resource_index/packages\n'}
+[5.273358] (pendulum) StdoutLine: {'line': b'copying package.xml -> /home/a-raspi1/endeza_ws/install/pendulum/share/pendulum\n'}
+[5.273815] (pendulum) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.281930] (pendulum) StdoutLine: {'line': b'Copying ../../build/pendulum/pendulum.egg-info to /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum-0.0.0-py3.10.egg-info\n'}
+[5.282524] (-) TimerEvent: {}
+[5.289236] (pendulum) StdoutLine: {'line': b'running install_scripts\n'}
+[5.382512] (pendulum) StdoutLine: {'line': b'Installing pendulum script to /home/a-raspi1/endeza_ws/install/pendulum/lib/pendulum\n'}
+[5.383148] (-) TimerEvent: {}
+[5.384502] (pendulum) StdoutLine: {'line': b"writing list of installed files to '/home/a-raspi1/endeza_ws/build/pendulum/install.log'\n"}
+[5.483442] (-) TimerEvent: {}
+[5.537980] (pendulum) CommandEnded: {'returncode': 0}
+[5.583619] (-) TimerEvent: {}
+[5.592276] (pendulum) JobEnded: {'identifier': 'pendulum', 'rc': 0}
+[5.683908] (-) TimerEvent: {}
+[5.784606] (-) TimerEvent: {}
+[5.885406] (-) TimerEvent: {}
+[5.986107] (-) TimerEvent: {}
+[6.062666] (q2rpy) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.086302] (-) TimerEvent: {}
+[6.187048] (-) TimerEvent: {}
+[6.287720] (-) TimerEvent: {}
+[6.388460] (-) TimerEvent: {}
+[6.489210] (-) TimerEvent: {}
+[6.589956] (-) TimerEvent: {}
+[6.616467] (q2rpy) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.687778] (q2rpy) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.690088] (-) TimerEvent: {}
+[6.788888] (q2rpy) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.790243] (-) TimerEvent: {}
+[6.890878] (-) TimerEvent: {}
+[6.926742] (q2rpy) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.991084] (-) TimerEvent: {}
+[7.091827] (-) TimerEvent: {}
+[7.107051] (q2rpy) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.192015] (-) TimerEvent: {}
+[7.292802] (-) TimerEvent: {}
+[7.393607] (-) TimerEvent: {}
+[7.494335] (-) TimerEvent: {}
+[7.595096] (-) TimerEvent: {}
+[7.606161] (q2rpy) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.643214] (q2rpy) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.695275] (-) TimerEvent: {}
+[7.796003] (-) TimerEvent: {}
+[7.896768] (-) TimerEvent: {}
+[7.997550] (-) TimerEvent: {}
+[8.098286] (-) TimerEvent: {}
+[8.199035] (-) TimerEvent: {}
+[8.299912] (-) TimerEvent: {}
+[8.400877] (-) TimerEvent: {}
+[8.451347] (q2rpy) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.501007] (-) TimerEvent: {}
+[8.601719] (-) TimerEvent: {}
+[8.702471] (-) TimerEvent: {}
+[8.775607] (q2rpy) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[8.802648] (-) TimerEvent: {}
+[8.903423] (-) TimerEvent: {}
+[9.004142] (-) TimerEvent: {}
+[9.105049] (-) TimerEvent: {}
+[9.205759] (-) TimerEvent: {}
+[9.288848] (q2rpy) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.305934] (-) TimerEvent: {}
+[9.398602] (q2rpy) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[9.406114] (-) TimerEvent: {}
+[9.506883] (-) TimerEvent: {}
+[9.607835] (-) TimerEvent: {}
+[9.708779] (-) TimerEvent: {}
+[9.808509] (q2rpy) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[9.809263] (-) TimerEvent: {}
+[9.815327] (q2rpy) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.909505] (-) TimerEvent: {}
+[10.010294] (-) TimerEvent: {}
+[10.111013] (-) TimerEvent: {}
+[10.211811] (-) TimerEvent: {}
+[10.299616] (q2rpy) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[10.311998] (-) TimerEvent: {}
+[10.412835] (-) TimerEvent: {}
+[10.513635] (-) TimerEvent: {}
+[10.580713] (q2rpy) StdoutLine: {'line': b'-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)\n'}
+[10.613846] (-) TimerEvent: {}
+[10.714584] (-) TimerEvent: {}
+[10.753749] (q2rpy) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[10.814765] (-) TimerEvent: {}
+[10.915534] (-) TimerEvent: {}
+[11.016278] (-) TimerEvent: {}
+[11.116976] (-) TimerEvent: {}
+[11.217780] (-) TimerEvent: {}
+[11.318548] (-) TimerEvent: {}
+[11.419345] (-) TimerEvent: {}
+[11.520142] (-) TimerEvent: {}
+[11.585360] (q2rpy) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[11.620376] (-) TimerEvent: {}
+[11.721076] (-) TimerEvent: {}
+[11.812019] (q2rpy) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[11.821381] (q2rpy) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[11.822187] (-) TimerEvent: {}
+[11.822604] (q2rpy) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[11.864170] (q2rpy) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[11.922379] (-) TimerEvent: {}
+[12.023105] (-) TimerEvent: {}
+[12.124314] (-) TimerEvent: {}
+[12.224991] (-) TimerEvent: {}
+[12.325686] (-) TimerEvent: {}
+[12.407563] (q2rpy) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[12.408665] (q2rpy) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/a-raspi1/endeza_ws/src/q2rpy/include>\n'}
+[12.409291] (q2rpy) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[12.414939] (q2rpy) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[12.422975] (q2rpy) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[12.423619] (q2rpy) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[12.425849] (-) TimerEvent: {}
+[12.427870] (q2rpy) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[12.440378] (q2rpy) StdoutLine: {'line': b'-- Configuring done (10.7s)\n'}
+[12.526063] (-) TimerEvent: {}
+[12.550977] (q2rpy) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[12.562734] (q2rpy) StdoutLine: {'line': b'-- Build files have been written to: /home/a-raspi1/endeza_ws/build/q2rpy\n'}
+[12.626349] (-) TimerEvent: {}
+[12.643314] (q2rpy) CommandEnded: {'returncode': 0}
+[12.645361] (q2rpy) JobProgress: {'identifier': 'q2rpy', 'progress': 'build'}
+[12.648803] (q2rpy) Command: {'cmd': ['/home/a-raspi1/.local/bin/cmake', '--build', '/home/a-raspi1/endeza_ws/build/q2rpy', '--', '-j4', '-l4'], 'cwd': '/home/a-raspi1/endeza_ws/build/q2rpy', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'a-raspi1'), ('SSH_CLIENT', '192.168.251.84 40520 22'), ('XDG_SESSION_TYPE', 'tty'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '2'), ('HOME', '/home/a-raspi1'), ('MOTD_SHOWN', 'pam'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a-raspi1'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/a-raspi1/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/a-raspi1/endeza_ws/build/q2rpy'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('SSH_CONNECTION', '192.168.251.84 40520 192.168.251.103 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.726528] (-) TimerEvent: {}
+[12.827320] (-) TimerEvent: {}
+[12.928048] (-) TimerEvent: {}
+[13.028884] (-) TimerEvent: {}
+[13.098334] (q2rpy) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/q2qpy.dir/src/q2qpy.cpp.o\x1b[0m\n'}
+[13.129116] (-) TimerEvent: {}
+[13.230132] (-) TimerEvent: {}
+[13.330898] (-) TimerEvent: {}
+[13.431645] (-) TimerEvent: {}
+[13.532389] (-) TimerEvent: {}
+[13.633115] (-) TimerEvent: {}
+[13.733963] (-) TimerEvent: {}
+[13.834816] (-) TimerEvent: {}
+[13.935638] (-) TimerEvent: {}
+[14.036402] (-) TimerEvent: {}
+[14.137140] (-) TimerEvent: {}
+[14.237884] (-) TimerEvent: {}
+[14.338745] (-) TimerEvent: {}
+[14.439566] (-) TimerEvent: {}
+[14.540396] (-) TimerEvent: {}
+[14.641094] (-) TimerEvent: {}
+[14.741799] (-) TimerEvent: {}
+[14.842507] (-) TimerEvent: {}
+[14.943396] (-) TimerEvent: {}
+[15.044392] (-) TimerEvent: {}
+[15.145173] (-) TimerEvent: {}
+[15.245899] (-) TimerEvent: {}
+[15.346673] (-) TimerEvent: {}
+[15.447418] (-) TimerEvent: {}
+[15.548221] (-) TimerEvent: {}
+[15.649100] (-) TimerEvent: {}
+[15.749820] (-) TimerEvent: {}
+[15.850632] (-) TimerEvent: {}
+[15.951497] (-) TimerEvent: {}
+[16.052335] (-) TimerEvent: {}
+[16.153282] (-) TimerEvent: {}
+[16.254147] (-) TimerEvent: {}
+[16.354884] (-) TimerEvent: {}
+[16.455683] (-) TimerEvent: {}
+[16.556553] (-) TimerEvent: {}
+[16.657473] (-) TimerEvent: {}
+[16.758256] (-) TimerEvent: {}
+[16.859023] (-) TimerEvent: {}
+[16.959915] (-) TimerEvent: {}
+[17.060754] (-) TimerEvent: {}
+[17.161507] (-) TimerEvent: {}
+[17.262288] (-) TimerEvent: {}
+[17.363131] (-) TimerEvent: {}
+[17.463925] (-) TimerEvent: {}
+[17.564757] (-) TimerEvent: {}
+[17.665514] (-) TimerEvent: {}
+[17.766349] (-) TimerEvent: {}
+[17.867243] (-) TimerEvent: {}
+[17.968144] (-) TimerEvent: {}
+[18.069346] (-) TimerEvent: {}
+[18.170200] (-) TimerEvent: {}
+[18.271072] (-) TimerEvent: {}
+[18.371829] (-) TimerEvent: {}
+[18.472759] (-) TimerEvent: {}
+[18.573635] (-) TimerEvent: {}
+[18.674494] (-) TimerEvent: {}
+[18.775319] (-) TimerEvent: {}
+[18.876134] (-) TimerEvent: {}
+[18.977055] (-) TimerEvent: {}
+[19.077859] (-) TimerEvent: {}
+[19.178905] (-) TimerEvent: {}
+[19.279702] (-) TimerEvent: {}
+[19.380566] (-) TimerEvent: {}
+[19.481324] (-) TimerEvent: {}
+[19.582131] (-) TimerEvent: {}
+[19.683039] (-) TimerEvent: {}
+[19.783783] (-) TimerEvent: {}
+[19.884588] (-) TimerEvent: {}
+[19.985376] (-) TimerEvent: {}
+[20.086215] (-) TimerEvent: {}
+[20.187002] (-) TimerEvent: {}
+[20.287848] (-) TimerEvent: {}
+[20.388685] (-) TimerEvent: {}
+[20.489515] (-) TimerEvent: {}
+[20.590452] (-) TimerEvent: {}
+[20.691445] (-) TimerEvent: {}
+[20.792359] (-) TimerEvent: {}
+[20.893132] (-) TimerEvent: {}
+[20.993890] (-) TimerEvent: {}
+[21.094700] (-) TimerEvent: {}
+[21.195487] (-) TimerEvent: {}
+[21.296331] (-) TimerEvent: {}
+[21.397117] (-) TimerEvent: {}
+[21.497905] (-) TimerEvent: {}
+[21.598667] (-) TimerEvent: {}
+[21.699462] (-) TimerEvent: {}
+[21.800268] (-) TimerEvent: {}
+[21.901115] (-) TimerEvent: {}
+[22.001966] (-) TimerEvent: {}
+[22.102729] (-) TimerEvent: {}
+[22.203527] (-) TimerEvent: {}
+[22.304335] (-) TimerEvent: {}
+[22.405151] (-) TimerEvent: {}
+[22.505892] (-) TimerEvent: {}
+[22.606645] (-) TimerEvent: {}
+[22.707431] (-) TimerEvent: {}
+[22.808227] (-) TimerEvent: {}
+[22.909062] (-) TimerEvent: {}
+[23.009837] (-) TimerEvent: {}
+[23.110734] (-) TimerEvent: {}
+[23.211590] (-) TimerEvent: {}
+[23.312405] (-) TimerEvent: {}
+[23.413231] (-) TimerEvent: {}
+[23.514105] (-) TimerEvent: {}
+[23.614925] (-) TimerEvent: {}
+[23.715725] (-) TimerEvent: {}
+[23.816540] (-) TimerEvent: {}
+[23.917330] (-) TimerEvent: {}
+[24.018174] (-) TimerEvent: {}
+[24.118947] (-) TimerEvent: {}
+[24.219808] (-) TimerEvent: {}
+[24.320718] (-) TimerEvent: {}
+[24.421505] (-) TimerEvent: {}
+[24.522301] (-) TimerEvent: {}
+[24.623232] (-) TimerEvent: {}
+[24.724025] (-) TimerEvent: {}
+[24.824866] (-) TimerEvent: {}
+[24.925637] (-) TimerEvent: {}
+[25.026425] (-) TimerEvent: {}
+[25.127267] (-) TimerEvent: {}
+[25.228059] (-) TimerEvent: {}
+[25.328886] (-) TimerEvent: {}
+[25.429664] (-) TimerEvent: {}
+[25.530447] (-) TimerEvent: {}
+[25.631337] (-) TimerEvent: {}
+[25.732170] (-) TimerEvent: {}
+[25.833048] (-) TimerEvent: {}
+[25.933854] (-) TimerEvent: {}
+[26.034636] (-) TimerEvent: {}
+[26.135468] (-) TimerEvent: {}
+[26.236347] (-) TimerEvent: {}
+[26.337130] (-) TimerEvent: {}
+[26.437917] (-) TimerEvent: {}
+[26.538687] (-) TimerEvent: {}
+[26.639493] (-) TimerEvent: {}
+[26.740386] (-) TimerEvent: {}
+[26.841174] (-) TimerEvent: {}
+[26.942018] (-) TimerEvent: {}
+[27.042814] (-) TimerEvent: {}
+[27.143644] (-) TimerEvent: {}
+[27.244557] (-) TimerEvent: {}
+[27.345348] (-) TimerEvent: {}
+[27.446123] (-) TimerEvent: {}
+[27.546959] (-) TimerEvent: {}
+[27.647829] (-) TimerEvent: {}
+[27.748697] (-) TimerEvent: {}
+[27.849489] (-) TimerEvent: {}
+[27.950235] (-) TimerEvent: {}
+[28.051017] (-) TimerEvent: {}
+[28.151840] (-) TimerEvent: {}
+[28.252743] (-) TimerEvent: {}
+[28.353602] (-) TimerEvent: {}
+[28.454359] (-) TimerEvent: {}
+[28.555202] (-) TimerEvent: {}
+[28.656043] (-) TimerEvent: {}
+[28.757037] (-) TimerEvent: {}
+[28.857880] (-) TimerEvent: {}
+[28.958665] (-) TimerEvent: {}
+[29.059484] (-) TimerEvent: {}
+[29.160341] (-) TimerEvent: {}
+[29.261090] (-) TimerEvent: {}
+[29.361960] (-) TimerEvent: {}
+[29.462783] (-) TimerEvent: {}
+[29.563613] (-) TimerEvent: {}
+[29.664412] (-) TimerEvent: {}
+[29.765141] (-) TimerEvent: {}
+[29.866140] (-) TimerEvent: {}
+[29.966966] (-) TimerEvent: {}
+[30.067822] (-) TimerEvent: {}
+[30.168738] (-) TimerEvent: {}
+[30.269551] (-) TimerEvent: {}
+[30.370426] (-) TimerEvent: {}
+[30.471228] (-) TimerEvent: {}
+[30.572012] (-) TimerEvent: {}
+[30.672860] (-) TimerEvent: {}
+[30.773650] (-) TimerEvent: {}
+[30.874554] (-) TimerEvent: {}
+[30.975358] (-) TimerEvent: {}
+[31.076207] (-) TimerEvent: {}
+[31.177039] (-) TimerEvent: {}
+[31.277821] (-) TimerEvent: {}
+[31.378622] (-) TimerEvent: {}
+[31.479416] (-) TimerEvent: {}
+[31.580204] (-) TimerEvent: {}
+[31.681032] (-) TimerEvent: {}
+[31.781821] (-) TimerEvent: {}
+[31.882637] (-) TimerEvent: {}
+[31.983495] (-) TimerEvent: {}
+[32.084341] (-) TimerEvent: {}
+[32.185152] (-) TimerEvent: {}
+[32.285968] (-) TimerEvent: {}
+[32.386822] (-) TimerEvent: {}
+[32.487606] (-) TimerEvent: {}
+[32.588456] (-) TimerEvent: {}
+[32.689270] (-) TimerEvent: {}
+[32.790059] (-) TimerEvent: {}
+[32.890895] (-) TimerEvent: {}
+[32.991734] (-) TimerEvent: {}
+[33.092575] (-) TimerEvent: {}
+[33.193393] (-) TimerEvent: {}
+[33.294235] (-) TimerEvent: {}
+[33.395179] (-) TimerEvent: {}
+[33.495960] (-) TimerEvent: {}
+[33.596918] (-) TimerEvent: {}
+[33.697788] (-) TimerEvent: {}
+[33.798562] (-) TimerEvent: {}
+[33.899339] (-) TimerEvent: {}
+[34.000172] (-) TimerEvent: {}
+[34.101003] (-) TimerEvent: {}
+[34.201819] (-) TimerEvent: {}
+[34.302595] (-) TimerEvent: {}
+[34.403379] (-) TimerEvent: {}
+[34.504153] (-) TimerEvent: {}
+[34.605062] (-) TimerEvent: {}
+[34.705839] (-) TimerEvent: {}
+[34.806606] (-) TimerEvent: {}
+[34.907442] (-) TimerEvent: {}
+[35.008313] (-) TimerEvent: {}
+[35.109074] (-) TimerEvent: {}
+[35.209906] (-) TimerEvent: {}
+[35.310698] (-) TimerEvent: {}
+[35.411547] (-) TimerEvent: {}
+[35.512374] (-) TimerEvent: {}
+[35.613139] (-) TimerEvent: {}
+[35.713935] (-) TimerEvent: {}
+[35.814836] (-) TimerEvent: {}
+[35.915612] (-) TimerEvent: {}
+[36.016449] (-) TimerEvent: {}
+[36.117218] (-) TimerEvent: {}
+[36.218025] (-) TimerEvent: {}
+[36.318872] (-) TimerEvent: {}
+[36.419632] (-) TimerEvent: {}
+[36.520418] (-) TimerEvent: {}
+[36.621203] (-) TimerEvent: {}
+[36.721976] (-) TimerEvent: {}
+[36.822855] (-) TimerEvent: {}
+[36.923668] (-) TimerEvent: {}
+[37.024467] (-) TimerEvent: {}
+[37.125285] (-) TimerEvent: {}
+[37.226252] (-) TimerEvent: {}
+[37.327064] (-) TimerEvent: {}
+[37.427773] (-) TimerEvent: {}
+[37.528565] (-) TimerEvent: {}
+[37.629360] (-) TimerEvent: {}
+[37.730145] (-) TimerEvent: {}
+[37.831004] (-) TimerEvent: {}
+[37.931849] (-) TimerEvent: {}
+[38.032723] (-) TimerEvent: {}
+[38.133512] (-) TimerEvent: {}
+[38.234311] (-) TimerEvent: {}
+[38.335106] (-) TimerEvent: {}
+[38.435918] (-) TimerEvent: {}
+[38.536964] (-) TimerEvent: {}
+[38.637853] (-) TimerEvent: {}
+[38.738795] (-) TimerEvent: {}
+[38.839598] (-) TimerEvent: {}
+[38.940445] (-) TimerEvent: {}
+[39.041255] (-) TimerEvent: {}
+[39.142014] (-) TimerEvent: {}
+[39.242764] (-) TimerEvent: {}
+[39.343607] (-) TimerEvent: {}
+[39.444759] (-) TimerEvent: {}
+[39.545792] (-) TimerEvent: {}
+[39.646799] (-) TimerEvent: {}
+[39.747720] (-) TimerEvent: {}
+[39.848603] (-) TimerEvent: {}
+[39.949416] (-) TimerEvent: {}
+[40.050186] (-) TimerEvent: {}
+[40.150978] (-) TimerEvent: {}
+[40.251749] (-) TimerEvent: {}
+[40.352687] (-) TimerEvent: {}
+[40.453472] (-) TimerEvent: {}
+[40.554253] (-) TimerEvent: {}
+[40.655045] (-) TimerEvent: {}
+[40.755809] (-) TimerEvent: {}
+[40.856636] (-) TimerEvent: {}
+[40.957517] (-) TimerEvent: {}
+[41.058321] (-) TimerEvent: {}
+[41.159158] (-) TimerEvent: {}
+[41.259936] (-) TimerEvent: {}
+[41.360770] (-) TimerEvent: {}
+[41.461624] (-) TimerEvent: {}
+[41.562453] (-) TimerEvent: {}
+[41.663194] (-) TimerEvent: {}
+[41.763976] (-) TimerEvent: {}
+[41.864832] (-) TimerEvent: {}
+[41.965644] (-) TimerEvent: {}
+[42.066482] (-) TimerEvent: {}
+[42.167292] (-) TimerEvent: {}
+[42.268100] (-) TimerEvent: {}
+[42.368954] (-) TimerEvent: {}
+[42.469796] (-) TimerEvent: {}
+[42.570654] (-) TimerEvent: {}
+[42.671416] (-) TimerEvent: {}
+[42.772226] (-) TimerEvent: {}
+[42.873054] (-) TimerEvent: {}
+[42.973833] (-) TimerEvent: {}
+[43.074669] (-) TimerEvent: {}
+[43.175545] (-) TimerEvent: {}
+[43.276416] (-) TimerEvent: {}
+[43.377244] (-) TimerEvent: {}
+[43.478002] (-) TimerEvent: {}
+[43.578744] (-) TimerEvent: {}
+[43.679549] (-) TimerEvent: {}
+[43.780392] (-) TimerEvent: {}
+[43.881143] (-) TimerEvent: {}
+[43.981911] (-) TimerEvent: {}
+[44.082644] (-) TimerEvent: {}
+[44.183379] (-) TimerEvent: {}
+[44.284183] (-) TimerEvent: {}
+[44.384991] (-) TimerEvent: {}
+[44.485797] (-) TimerEvent: {}
+[44.586576] (-) TimerEvent: {}
+[44.687372] (-) TimerEvent: {}
+[44.788227] (-) TimerEvent: {}
+[44.889061] (-) TimerEvent: {}
+[44.989839] (-) TimerEvent: {}
+[45.090621] (-) TimerEvent: {}
+[45.191375] (-) TimerEvent: {}
+[45.292175] (-) TimerEvent: {}
+[45.393215] (-) TimerEvent: {}
+[45.493995] (-) TimerEvent: {}
+[45.594785] (-) TimerEvent: {}
+[45.695584] (-) TimerEvent: {}
+[45.796404] (-) TimerEvent: {}
+[45.897229] (-) TimerEvent: {}
+[45.998029] (-) TimerEvent: {}
+[46.098858] (-) TimerEvent: {}
+[46.199705] (-) TimerEvent: {}
+[46.300549] (-) TimerEvent: {}
+[46.401403] (-) TimerEvent: {}
+[46.502186] (-) TimerEvent: {}
+[46.602943] (-) TimerEvent: {}
+[46.703780] (-) TimerEvent: {}
+[46.804595] (-) TimerEvent: {}
+[46.905347] (-) TimerEvent: {}
+[47.006187] (-) TimerEvent: {}
+[47.106974] (-) TimerEvent: {}
+[47.207756] (-) TimerEvent: {}
+[47.308622] (-) TimerEvent: {}
+[47.409414] (-) TimerEvent: {}
+[47.510259] (-) TimerEvent: {}
+[47.611026] (-) TimerEvent: {}
+[47.711801] (-) TimerEvent: {}
+[47.812642] (-) TimerEvent: {}
+[47.913390] (-) TimerEvent: {}
+[48.014165] (-) TimerEvent: {}
+[48.114964] (-) TimerEvent: {}
+[48.215787] (-) TimerEvent: {}
+[48.316606] (-) TimerEvent: {}
+[48.417344] (-) TimerEvent: {}
+[48.518184] (-) TimerEvent: {}
+[48.618987] (-) TimerEvent: {}
+[48.719853] (-) TimerEvent: {}
+[48.820694] (-) TimerEvent: {}
+[48.921476] (-) TimerEvent: {}
+[49.022273] (-) TimerEvent: {}
+[49.123096] (-) TimerEvent: {}
+[49.223864] (-) TimerEvent: {}
+[49.324636] (-) TimerEvent: {}
+[49.425430] (-) TimerEvent: {}
+[49.526250] (-) TimerEvent: {}
+[49.627001] (-) TimerEvent: {}
+[49.727792] (-) TimerEvent: {}
+[49.828603] (-) TimerEvent: {}
+[49.929393] (-) TimerEvent: {}
+[50.030188] (-) TimerEvent: {}
+[50.130998] (-) TimerEvent: {}
+[50.231775] (-) TimerEvent: {}
+[50.332647] (-) TimerEvent: {}
+[50.433449] (-) TimerEvent: {}
+[50.534203] (-) TimerEvent: {}
+[50.635022] (-) TimerEvent: {}
+[50.735809] (-) TimerEvent: {}
+[50.836604] (-) TimerEvent: {}
+[50.937435] (-) TimerEvent: {}
+[51.038209] (-) TimerEvent: {}
+[51.139011] (-) TimerEvent: {}
+[51.239788] (-) TimerEvent: {}
+[51.340617] (-) TimerEvent: {}
+[51.441440] (-) TimerEvent: {}
+[51.542197] (-) TimerEvent: {}
+[51.642946] (-) TimerEvent: {}
+[51.743711] (-) TimerEvent: {}
+[51.844515] (-) TimerEvent: {}
+[51.945269] (-) TimerEvent: {}
+[52.046017] (-) TimerEvent: {}
+[52.146850] (-) TimerEvent: {}
+[52.247638] (-) TimerEvent: {}
+[52.348435] (-) TimerEvent: {}
+[52.449198] (-) TimerEvent: {}
+[52.549978] (-) TimerEvent: {}
+[52.650819] (-) TimerEvent: {}
+[52.751593] (-) TimerEvent: {}
+[52.852413] (-) TimerEvent: {}
+[52.953156] (-) TimerEvent: {}
+[53.053938] (-) TimerEvent: {}
+[53.155150] (-) TimerEvent: {}
+[53.256438] (-) TimerEvent: {}
+[53.357415] (-) TimerEvent: {}
+[53.458192] (-) TimerEvent: {}
+[53.559043] (-) TimerEvent: {}
+[53.659889] (-) TimerEvent: {}
+[53.760678] (-) TimerEvent: {}
+[53.861435] (-) TimerEvent: {}
+[53.962201] (-) TimerEvent: {}
+[54.062964] (-) TimerEvent: {}
+[54.163778] (-) TimerEvent: {}
+[54.264617] (-) TimerEvent: {}
+[54.365407] (-) TimerEvent: {}
+[54.466163] (-) TimerEvent: {}
+[54.566923] (-) TimerEvent: {}
+[54.667771] (-) TimerEvent: {}
+[54.768545] (-) TimerEvent: {}
+[54.869285] (-) TimerEvent: {}
+[54.970061] (-) TimerEvent: {}
+[55.070836] (-) TimerEvent: {}
+[55.171621] (-) TimerEvent: {}
+[55.272442] (-) TimerEvent: {}
+[55.373211] (-) TimerEvent: {}
+[55.473946] (-) TimerEvent: {}
+[55.574729] (-) TimerEvent: {}
+[55.676023] (-) TimerEvent: {}
+[55.778636] (-) TimerEvent: {}
+[55.879637] (-) TimerEvent: {}
+[55.980577] (-) TimerEvent: {}
+[56.081400] (-) TimerEvent: {}
+[56.182279] (-) TimerEvent: {}
+[56.283358] (-) TimerEvent: {}
+[56.384754] (-) TimerEvent: {}
+[56.476601] (q2rpy) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable q2qpy\x1b[0m\n'}
+[56.484996] (-) TimerEvent: {}
+[56.585843] (-) TimerEvent: {}
+[56.686829] (-) TimerEvent: {}
+[56.787758] (-) TimerEvent: {}
+[56.888860] (-) TimerEvent: {}
+[56.989819] (-) TimerEvent: {}
+[57.090874] (-) TimerEvent: {}
+[57.191819] (-) TimerEvent: {}
+[57.293019] (-) TimerEvent: {}
+[57.393937] (-) TimerEvent: {}
+[57.495066] (-) TimerEvent: {}
+[57.596518] (-) TimerEvent: {}
+[57.697992] (-) TimerEvent: {}
+[57.799233] (-) TimerEvent: {}
+[57.900448] (-) TimerEvent: {}
+[58.001350] (-) TimerEvent: {}
+[58.102263] (-) TimerEvent: {}
+[58.203127] (-) TimerEvent: {}
+[58.304133] (-) TimerEvent: {}
+[58.404929] (-) TimerEvent: {}
+[58.505654] (-) TimerEvent: {}
+[58.606401] (-) TimerEvent: {}
+[58.707595] (-) TimerEvent: {}
+[58.808447] (-) TimerEvent: {}
+[58.909201] (-) TimerEvent: {}
+[59.009937] (-) TimerEvent: {}
+[59.057292] (q2rpy) StdoutLine: {'line': b'[100%] Built target q2qpy\n'}
+[59.099676] (q2rpy) CommandEnded: {'returncode': 0}
+[59.110144] (-) TimerEvent: {}
+[59.210998] (-) TimerEvent: {}
+[59.311760] (-) TimerEvent: {}
+[59.350552] (q2rpy) JobProgress: {'identifier': 'q2rpy', 'progress': 'install'}
+[59.411975] (-) TimerEvent: {}
+[59.518048] (q2rpy) Command: {'cmd': ['/home/a-raspi1/.local/bin/cmake', '--install', '/home/a-raspi1/endeza_ws/build/q2rpy'], 'cwd': '/home/a-raspi1/endeza_ws/build/q2rpy', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'a-raspi1'), ('SSH_CLIENT', '192.168.251.84 40520 22'), ('XDG_SESSION_TYPE', 'tty'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '2'), ('HOME', '/home/a-raspi1'), ('MOTD_SHOWN', 'pam'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'a-raspi1'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/a-raspi1/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/a-raspi1/endeza_ws/build/q2rpy'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('SSH_CONNECTION', '192.168.251.84 40520 192.168.251.103 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[59.522313] (-) TimerEvent: {}
+[59.623164] (-) TimerEvent: {}
+[59.652778] (q2rpy) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[59.654378] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/lib/q2rpy/q2qpy\n'}
+[59.687699] (q2rpy) StdoutLine: {'line': b'-- Set runtime path of "/home/a-raspi1/endeza_ws/install/q2rpy/lib/q2rpy/q2qpy" to ""\n'}
+[59.688468] (q2rpy) StdoutLine: {'line': b'-- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/ament_index/resource_index/package_run_dependencies/q2rpy\n'}
+[59.689001] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/ament_index/resource_index/parent_prefix_path/q2rpy\n'}
+[59.690426] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/environment/ament_prefix_path.sh\n'}
+[59.691874] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/environment/ament_prefix_path.dsv\n'}
+[59.693372] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/environment/path.sh\n'}
+[59.694638] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/environment/path.dsv\n'}
+[59.695985] (q2rpy) StdoutLine: {'line': b'-- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/local_setup.bash\n'}
+[59.696559] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/local_setup.sh\n'}
+[59.697880] (q2rpy) StdoutLine: {'line': b'-- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/local_setup.zsh\n'}
+[59.698492] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/local_setup.dsv\n'}
+[59.699702] (q2rpy) StdoutLine: {'line': b'-- Installing: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.dsv\n'}
+[59.701183] (q2rpy) StdoutLine: {'line': b'-- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/ament_index/resource_index/packages/q2rpy\n'}
+[59.701717] (q2rpy) StdoutLine: {'line': b'-- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/cmake/q2rpyConfig.cmake\n'}
+[59.702253] (q2rpy) StdoutLine: {'line': b'-- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/cmake/q2rpyConfig-version.cmake\n'}
+[59.702647] (q2rpy) StdoutLine: {'line': b'-- Up-to-date: /home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.xml\n'}
+[59.723570] (-) TimerEvent: {}
+[59.729137] (q2rpy) CommandEnded: {'returncode': 0}
+[59.823719] (-) TimerEvent: {}
+[59.924425] (-) TimerEvent: {}
+[60.025248] (-) TimerEvent: {}
+[60.049783] (q2rpy) JobEnded: {'identifier': 'q2rpy', 'rc': 0}
+[60.052877] (-) EventReactorShutdown: {}

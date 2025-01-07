@@ -1,0 +1,192 @@
+[0.515s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--cmake-clean-cache']
+[0.516s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=True, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffbd1cbb20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffbd33ce20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffbd33ce20>>)
+[1.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.449s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.449s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.449s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.449s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.450s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.450s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/a-raspi1/endeza_ws'
+[1.450s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/pendulum) by extensions ['ignore', 'ignore_ament_install']
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/pendulum) by extension 'ignore'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/pendulum) by extension 'ignore_ament_install'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/pendulum) by extensions ['colcon_pkg']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/pendulum) by extension 'colcon_pkg'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/pendulum) by extensions ['colcon_meta']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/pendulum) by extension 'colcon_meta'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/pendulum) by extensions ['ros']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/pendulum) by extension 'ros'
+[1.526s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pendulum' with type 'ros.ament_python' and name 'pendulum'
+[1.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2rpy) by extensions ['ignore', 'ignore_ament_install']
+[1.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2rpy) by extension 'ignore'
+[1.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2rpy) by extension 'ignore_ament_install'
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2rpy) by extensions ['colcon_pkg']
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2rpy) by extension 'colcon_pkg'
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2rpy) by extensions ['colcon_meta']
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2rpy) by extension 'colcon_meta'
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2rpy) by extensions ['ros']
+[1.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2rpy) by extension 'ros'
+[1.533s] DEBUG:colcon.colcon_core.package_identification:Package 'src/q2rpy' with type 'ros.ament_cmake' and name 'q2rpy'
+[1.533s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.534s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.534s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.534s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.534s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.626s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.627s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.644s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 292 installed packages in /opt/ros/humble
+[1.652s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.863s] Level 5:colcon.colcon_core.verb:set package 'pendulum' build argument 'cmake_args' from command line to 'None'
+[1.863s] Level 5:colcon.colcon_core.verb:set package 'pendulum' build argument 'cmake_target' from command line to 'None'
+[1.863s] Level 5:colcon.colcon_core.verb:set package 'pendulum' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.863s] Level 5:colcon.colcon_core.verb:set package 'pendulum' build argument 'cmake_clean_cache' from command line to 'True'
+[1.864s] Level 5:colcon.colcon_core.verb:set package 'pendulum' build argument 'cmake_clean_first' from command line to 'False'
+[1.864s] Level 5:colcon.colcon_core.verb:set package 'pendulum' build argument 'cmake_force_configure' from command line to 'False'
+[1.864s] Level 5:colcon.colcon_core.verb:set package 'pendulum' build argument 'ament_cmake_args' from command line to 'None'
+[1.864s] Level 5:colcon.colcon_core.verb:set package 'pendulum' build argument 'catkin_cmake_args' from command line to 'None'
+[1.864s] Level 5:colcon.colcon_core.verb:set package 'pendulum' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.864s] DEBUG:colcon.colcon_core.verb:Building package 'pendulum' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/a-raspi1/endeza_ws/build/pendulum', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/a-raspi1/endeza_ws/install/pendulum', 'merge_install': False, 'path': '/home/a-raspi1/endeza_ws/src/pendulum', 'symlink_install': False, 'test_result_base': None}
+[1.866s] Level 5:colcon.colcon_core.verb:set package 'q2rpy' build argument 'cmake_args' from command line to 'None'
+[1.866s] Level 5:colcon.colcon_core.verb:set package 'q2rpy' build argument 'cmake_target' from command line to 'None'
+[1.866s] Level 5:colcon.colcon_core.verb:set package 'q2rpy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.866s] Level 5:colcon.colcon_core.verb:set package 'q2rpy' build argument 'cmake_clean_cache' from command line to 'True'
+[1.867s] Level 5:colcon.colcon_core.verb:set package 'q2rpy' build argument 'cmake_clean_first' from command line to 'False'
+[1.867s] Level 5:colcon.colcon_core.verb:set package 'q2rpy' build argument 'cmake_force_configure' from command line to 'False'
+[1.867s] Level 5:colcon.colcon_core.verb:set package 'q2rpy' build argument 'ament_cmake_args' from command line to 'None'
+[1.867s] Level 5:colcon.colcon_core.verb:set package 'q2rpy' build argument 'catkin_cmake_args' from command line to 'None'
+[1.867s] Level 5:colcon.colcon_core.verb:set package 'q2rpy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.867s] DEBUG:colcon.colcon_core.verb:Building package 'q2rpy' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/a-raspi1/endeza_ws/build/q2rpy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/a-raspi1/endeza_ws/install/q2rpy', 'merge_install': False, 'path': '/home/a-raspi1/endeza_ws/src/q2rpy', 'symlink_install': False, 'test_result_base': None}
+[1.868s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.872s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.873s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/a-raspi1/endeza_ws/src/pendulum' with build type 'ament_python'
+[1.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('pendulum', 'ament_prefix_path')
+[1.884s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-raspi1/endeza_ws/install/pendulum/share/pendulum/hook/ament_prefix_path.ps1'
+[1.888s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/a-raspi1/endeza_ws/install/pendulum/share/pendulum/hook/ament_prefix_path.dsv'
+[1.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-raspi1/endeza_ws/install/pendulum/share/pendulum/hook/ament_prefix_path.sh'
+[1.896s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.896s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.914s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/a-raspi1/endeza_ws/src/q2rpy' with build type 'ament_cmake'
+[1.915s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/a-raspi1/endeza_ws/src/q2rpy'
+[1.916s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.917s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.422s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/a-raspi1/endeza_ws/src/pendulum'
+[3.424s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.424s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.460s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/a-raspi1/endeza_ws/build/q2rpy': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake /home/a-raspi1/endeza_ws/src/q2rpy -DCMAKE_INSTALL_PREFIX=/home/a-raspi1/endeza_ws/install/q2rpy
+[5.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/a-raspi1/endeza_ws/src/pendulum': PYTHONPATH=/home/a-raspi1/endeza_ws/build/pendulum/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pendulum build --build-base /home/a-raspi1/endeza_ws/build/pendulum/build install --record /home/a-raspi1/endeza_ws/build/pendulum/install.log --single-version-externally-managed install_data
+[7.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/a-raspi1/endeza_ws/src/pendulum' returned '0': PYTHONPATH=/home/a-raspi1/endeza_ws/build/pendulum/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pendulum build --build-base /home/a-raspi1/endeza_ws/build/pendulum/build install --record /home/a-raspi1/endeza_ws/build/pendulum/install.log --single-version-externally-managed install_data
+[7.424s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/pendulum' for CMake module files
+[7.427s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/pendulum' for CMake config files
+[7.431s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/pendulum/lib'
+[7.432s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/pendulum/bin'
+[7.433s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/pendulum/lib/pkgconfig/pendulum.pc'
+[7.434s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages'
+[7.434s] Level 1:colcon.colcon_core.shell:create_environment_hook('pendulum', 'pythonpath')
+[7.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-raspi1/endeza_ws/install/pendulum/share/pendulum/hook/pythonpath.ps1'
+[7.437s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/a-raspi1/endeza_ws/install/pendulum/share/pendulum/hook/pythonpath.dsv'
+[7.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-raspi1/endeza_ws/install/pendulum/share/pendulum/hook/pythonpath.sh'
+[7.442s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/pendulum/bin'
+[7.442s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pendulum)
+[7.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/pendulum/share/pendulum/package.ps1'
+[7.448s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/a-raspi1/endeza_ws/install/pendulum/share/pendulum/package.dsv'
+[7.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/pendulum/share/pendulum/package.sh'
+[7.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/pendulum/share/pendulum/package.bash'
+[7.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/pendulum/share/pendulum/package.zsh'
+[7.462s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/a-raspi1/endeza_ws/install/pendulum/share/colcon-core/packages/pendulum)
+[14.516s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/a-raspi1/endeza_ws/build/q2rpy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake /home/a-raspi1/endeza_ws/src/q2rpy -DCMAKE_INSTALL_PREFIX=/home/a-raspi1/endeza_ws/install/q2rpy
+[14.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/a-raspi1/endeza_ws/build/q2rpy': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake --build /home/a-raspi1/endeza_ws/build/q2rpy -- -j4 -l4
+[60.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/a-raspi1/endeza_ws/build/q2rpy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake --build /home/a-raspi1/endeza_ws/build/q2rpy -- -j4 -l4
+[61.393s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/a-raspi1/endeza_ws/build/q2rpy': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake --install /home/a-raspi1/endeza_ws/build/q2rpy
+[61.600s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q2rpy)
+[61.602s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy' for CMake module files
+[61.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/a-raspi1/endeza_ws/build/q2rpy' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake --install /home/a-raspi1/endeza_ws/build/q2rpy
+[61.606s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy' for CMake config files
+[61.608s] Level 1:colcon.colcon_core.shell:create_environment_hook('q2rpy', 'cmake_prefix_path')
+[61.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/hook/cmake_prefix_path.ps1'
+[61.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/hook/cmake_prefix_path.dsv'
+[61.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/hook/cmake_prefix_path.sh'
+[61.617s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy/lib'
+[61.617s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy/bin'
+[61.618s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy/lib/pkgconfig/q2rpy.pc'
+[61.619s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy/lib/python3.10/site-packages'
+[61.620s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy/bin'
+[61.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.ps1'
+[61.624s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.dsv'
+[61.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.sh'
+[61.628s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.bash'
+[61.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.zsh'
+[61.632s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/a-raspi1/endeza_ws/install/q2rpy/share/colcon-core/packages/q2rpy)
+[61.889s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q2rpy)
+[61.890s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy' for CMake module files
+[61.893s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy' for CMake config files
+[61.895s] Level 1:colcon.colcon_core.shell:create_environment_hook('q2rpy', 'cmake_prefix_path')
+[61.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/hook/cmake_prefix_path.ps1'
+[61.899s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/hook/cmake_prefix_path.dsv'
+[61.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/hook/cmake_prefix_path.sh'
+[61.903s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy/lib'
+[61.904s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy/bin'
+[61.904s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy/lib/pkgconfig/q2rpy.pc'
+[61.905s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy/lib/python3.10/site-packages'
+[61.906s] Level 1:colcon.colcon_core.environment:checking '/home/a-raspi1/endeza_ws/install/q2rpy/bin'
+[61.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.ps1'
+[61.910s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.dsv'
+[61.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.sh'
+[61.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.bash'
+[61.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/a-raspi1/endeza_ws/install/q2rpy/share/q2rpy/package.zsh'
+[61.919s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/a-raspi1/endeza_ws/install/q2rpy/share/colcon-core/packages/q2rpy)
+[61.921s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[61.923s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[61.923s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[61.923s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[61.946s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[61.946s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[61.947s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[61.992s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[61.993s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/a-raspi1/endeza_ws/install/local_setup.ps1'
+[61.997s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/a-raspi1/endeza_ws/install/_local_setup_util_ps1.py'
+[62.004s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/a-raspi1/endeza_ws/install/setup.ps1'
+[62.008s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/a-raspi1/endeza_ws/install/local_setup.sh'
+[62.011s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/a-raspi1/endeza_ws/install/_local_setup_util_sh.py'
+[62.013s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/a-raspi1/endeza_ws/install/setup.sh'
+[62.018s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/a-raspi1/endeza_ws/install/local_setup.bash'
+[62.020s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/a-raspi1/endeza_ws/install/setup.bash'
+[62.025s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/a-raspi1/endeza_ws/install/local_setup.zsh'
+[62.028s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/a-raspi1/endeza_ws/install/setup.zsh'

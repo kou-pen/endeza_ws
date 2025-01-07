@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/pendulum/pendulum.egg-info
+writing ../../build/pendulum/pendulum.egg-info/PKG-INFO
+writing dependency_links to ../../build/pendulum/pendulum.egg-info/dependency_links.txt
+writing entry points to ../../build/pendulum/pendulum.egg-info/entry_points.txt
+writing requirements to ../../build/pendulum/pendulum.egg-info/requires.txt
+writing top-level names to ../../build/pendulum/pendulum.egg-info/top_level.txt
+writing manifest file '../../build/pendulum/pendulum.egg-info/SOURCES.txt'
+reading manifest file '../../build/pendulum/pendulum.egg-info/SOURCES.txt'
+writing manifest file '../../build/pendulum/pendulum.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/a-raspi1/endeza_ws/build/pendulum/build
+creating /home/a-raspi1/endeza_ws/build/pendulum/build/lib
+creating /home/a-raspi1/endeza_ws/build/pendulum/build/lib/pendulum
+copying pendulum/pendulum.py -> /home/a-raspi1/endeza_ws/build/pendulum/build/lib/pendulum
+copying pendulum/__init__.py -> /home/a-raspi1/endeza_ws/build/pendulum/build/lib/pendulum
+running install
+running install_lib
+creating /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum
+copying /home/a-raspi1/endeza_ws/build/pendulum/build/lib/pendulum/pendulum.py -> /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum
+copying /home/a-raspi1/endeza_ws/build/pendulum/build/lib/pendulum/__init__.py -> /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum
+byte-compiling /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum/pendulum.py to pendulum.cpython-310.pyc
+byte-compiling /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/a-raspi1/endeza_ws/install/pendulum/share/ament_index
+creating /home/a-raspi1/endeza_ws/install/pendulum/share/ament_index/resource_index
+creating /home/a-raspi1/endeza_ws/install/pendulum/share/ament_index/resource_index/packages
+copying resource/pendulum -> /home/a-raspi1/endeza_ws/install/pendulum/share/ament_index/resource_index/packages
+copying package.xml -> /home/a-raspi1/endeza_ws/install/pendulum/share/pendulum
+running install_egg_info
+Copying ../../build/pendulum/pendulum.egg-info to /home/a-raspi1/endeza_ws/install/pendulum/lib/python3.10/site-packages/pendulum-0.0.0-py3.10.egg-info
+running install_scripts
+Installing pendulum script to /home/a-raspi1/endeza_ws/install/pendulum/lib/pendulum
+writing list of installed files to '/home/a-raspi1/endeza_ws/build/pendulum/install.log'

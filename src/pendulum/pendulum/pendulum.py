@@ -6,10 +6,11 @@ import pigpio
 import time
 import math
 
-kPGain = 3600.0
+kPGain = 7500.0
 kIGain = 0.0
 kDGain = 0.0
-TargetAngle = -0.32
+TargetAngle = -0.249
+
 class Pendulum(Node):
     node_name = 'pendulum'
     PWM1_PIN = [17, 18]

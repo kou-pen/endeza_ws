@@ -1,0 +1,2 @@
+Invoking command in '/home/a-raspi1/endeza_ws/build/q2rpy': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake --build /home/a-raspi1/endeza_ws/build/q2rpy -- -j4 -l4
+Invoked command in '/home/a-raspi1/endeza_ws/build/q2rpy' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /home/a-raspi1/.local/bin/cmake --build /home/a-raspi1/endeza_ws/build/q2rpy -- -j4 -l4
