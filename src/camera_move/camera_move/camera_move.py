@@ -46,7 +46,7 @@ class CameraMove(Node):
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         
         corners, ids, rejectedCandidates = self.detector.detectMarkers(gray)
-        frame = aruco.drawDetectedMarkers(frame, corners, ids)
+        # frame = aruco.drawDetectedMarkers(frame, corners, ids)
         
         img = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")
         self.image_pub.publish(img)
