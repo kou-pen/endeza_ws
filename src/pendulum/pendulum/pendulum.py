@@ -6,10 +6,11 @@ import pigpio
 import time
 import math
 
-kPGain = 7500.0
-kIGain = 0.0
-kDGain = 0.0
-TargetAngle = -0.249
+kPGain = 7700.0
+kIGain = 600.0
+kDGain = 45.0
+
+TargetAngle = -0.190
 
 class Pendulum(Node):
     node_name = 'pendulum'
